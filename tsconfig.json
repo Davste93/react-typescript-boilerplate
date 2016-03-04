@@ -2,8 +2,26 @@
   "compilerOptions": {
     "target": "ES6",
     "jsx": "preserve",
-    "noEmit": true,
-    "experimentalDecorators": true
+    "noEmitOnError": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "classic"
   },
-  "exclude": ["node_modules", "config", "dev_server.js"]
+  "filesGlob": [
+    "app/**/*.ts",
+    "app/**/*.tsx",
+    "typings/main.d.ts",
+    "!node_modules/**"
+  ],
+  "exclude": [
+    "node_modules",
+    "config",
+    "dev_server.js"
+  ],
+  "files": [
+    "app/index.tsx",
+    "typings/main.d.ts"
+  ],
+  "atom": {
+    "rewriteTsconfig": true
+  }
 }
