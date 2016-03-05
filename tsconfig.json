@@ -30,13 +30,6 @@
     "app/tsmvc-consumer/implementation/model/UserModel.ts",
     "app/tsmvc-consumer/implementation/service/AddressService.ts",
     "app/tsmvc-consumer/implementation/service/UserService.ts",
-    "app/tsmvc/classes/helper/ApiParser.ts",
-    "app/tsmvc/classes/helper/ApiRepository.ts",
-    "app/tsmvc/classes/helper/List.ts",
-    "app/tsmvc/interfaces/data/DataRepository.ts",
-    "app/tsmvc/interfaces/model/Model.ts",
-    "app/tsmvc/interfaces/model/Serializable.ts",
-    "app/tsmvc/interfaces/service/Service.ts",
     "app/index.tsx",
     "typings/main.d.ts"
   ],

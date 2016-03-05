@@ -3,8 +3,8 @@ var gulp = require('gulp');
 var webpack = require('webpack');
 var gutil = require("gulp-util");
 var WebpackDevServer = require("webpack-dev-server");
+var jsonServer = require('gulp-json-srv');
 var config = require('./config/webpack.dev');
-
 var port_server = 8085;
 var port_db = 8086;
 var compiler = webpack(config);
@@ -15,8 +15,15 @@ gulp.task('build', function() {
     .pipe(gulp.dest('dist/'));
 });
 
+gulp.task('mockdb', function() {
+  jsonServer.start({
+    data: 'apiMockService/db.json',
+    port: port_db });
+});
+
 //dev task:
-gulp.task('serve', function(){
+gulp.task('serve', ['mockdb'], function(){
+  //Webpackdev server builds so there's no need
     new WebpackDevServer(compiler, {
       /*drop it like it's*/hot:true,
       noInfo: false,
@@ -27,23 +34,4 @@ gulp.task('serve', function(){
         // Server listening
         gutil.log(`Listening at http://localhost:${port_server}`);
     });
-  //
-  //
-  // app.use(require('webpack-dev-middleware')(compiler, {
-  //
-  // }));
-  //
-  // app.use(require('webpack-hot-middleware')(compiler));
-  //
-  // app.get('*', (req, res) => {
-  //   res.sendFile(path.join(__dirname, 'index.html'));
-  // });
-  //
-  // app.listen(port, 'localhost', err => {
-  //   if (err) {
-  //     console.log(err);
-  //     return;
-  //   }
-  //   console.log(`Listening at http://localhost:${port}`);
-  // });
 });

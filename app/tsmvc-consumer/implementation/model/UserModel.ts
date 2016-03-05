@@ -1,5 +1,5 @@
-import {Model, indexKey} from "../../../tsmvc/interfaces/model/Model";
-import {List} from "../../../tsmvc/classes/helper/List";
+import {Model, indexKey} from "tsmvc";
+import {List} from "tsmvc";
 /*==============================================================================
                                 REQUIRED CLASSES
  */

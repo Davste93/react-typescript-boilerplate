@@ -1,5 +1,5 @@
-import {List} from "../../../tsmvc/classes/helper/List";
-import {Service} from "../../../tsmvc/interfaces/service/Service";
+import {List} from "tsmvc";
+import {Service} from "tsmvc";
 import {Inject, TypeBinding, Kernel, TypeBindingScopeEnum} from "inversify";
 
 import {UserModel} from "../model/UserModel";

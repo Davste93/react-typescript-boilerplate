@@ -1,4 +1,4 @@
-import {DataRepository} from "../../../tsmvc/interfaces/data/DataRepository";
+import {DataRepository} from "tsmvc";
 import {UserModel} from "../model/UserModel";
 import {AddressModel} from "../model/AddressModel";
 

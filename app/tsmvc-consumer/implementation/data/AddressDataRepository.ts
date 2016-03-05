@@ -1,6 +1,6 @@
 
-import {DataRepository} from "../../../tsmvc/interfaces/data/DataRepository";
-import {List} from "../../../tsmvc/classes/helper/List";
+import {DataRepository} from "tsmvc";
+import {List} from "tsmvc";
 import {AddressModel} from "../model/AddressModel";
 
 interface AddressDataRepository extends DataRepository<AddressModel> {

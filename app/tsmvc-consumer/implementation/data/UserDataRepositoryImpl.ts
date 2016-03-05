@@ -1,5 +1,5 @@
 import {Config} from "../config/config";
-import {ApiRepository} from "../../../tsmvc/classes/helper/ApiRepository";
+import {ApiRepository} from "tsmvc";
 
 import {UserModel} from "../model/UserModel";
 import UserDataRepository from "./UserDataRepository";

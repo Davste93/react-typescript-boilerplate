@@ -1,4 +1,4 @@
-  import {Model, indexKey} from "../../../tsmvc/interfaces/model/Model";
+  import {Model, indexKey} from "tsmvc";
 
   export class AddressModel extends Model  {
     @indexKey
