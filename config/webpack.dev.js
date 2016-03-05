@@ -1,12 +1,14 @@
 var webpack = require('webpack');
 var path = require('path');
-
 var APP_DIR = path.join(__dirname, '..', 'app');
 
 module.exports = {
+  cache: true,
   debug: true,
-  devtool: 'source-map',
-  entry: ['webpack-hot-middleware/client', './app/index.tsx'],
+  devtool: 'inline-source-map',
+  entry: ['./app/index.tsx',
+          'webpack/hot/dev-server',
+          'webpack-dev-server/client?http://localhost:8085/'],
   module: {
     preLoaders: [{
       test: /\.tsx?$/,
@@ -25,6 +27,7 @@ module.exports = {
     publicPath: '/static/'
   },
   plugins: [
+    new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin()
   ],

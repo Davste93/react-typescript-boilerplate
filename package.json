@@ -28,6 +28,8 @@
     "babel-preset-react": "^6.3.13",
     "babel-preset-stage-0": "^6.3.13",
     "express": "^4.13.4",
+    "gulp": "^3.9.1",
+    "gulp-util": "^3.0.7",
     "react-transform-catch-errors": "^1.0.2",
     "react-transform-hmr": "^1.0.2",
     "redbox-react": "^1.2.2",
@@ -36,7 +38,10 @@
     "tslint-loader": "^2.1.0",
     "webpack": "^1.12.14",
     "webpack-dev-middleware": "^1.5.1",
-    "webpack-hot-middleware": "^2.6.4"
+    "webpack-dev-server": "^1.14.1",
+    "webpack-hot-middleware": "^2.6.4",
+    "webpack-livereload-plugin": "^0.6.0",
+    "webpack-stream": "^3.1.0"
   },
   "dependencies": {
     "react": "^0.14.7",
@@ -45,6 +50,7 @@
     "redux": "^3.1.5",
     "ts-loader": "^0.8.1",
     "tsmvc": "^1.0.35",
-    "typescript": "^1.7.5"
+    "typescript": "^1.7.5",
+    "url": "^0.11.0"
   }
 }

@@ -1,12 +1,15 @@
 {
   "name": "react-typescript-boilerplate",
   "ambientDependencies": {
+    "node": "github:DefinitelyTyped/DefinitelyTyped/node/node.d.ts#48c1e3c1d6baefa4f1a126f188c27c4fefd36bff",
     "react": "github:DefinitelyTyped/DefinitelyTyped/react/react.d.ts#ba424f7ee39717d51c17699a09ac8df312a7e9a1",
     "react-dom": "github:DefinitelyTyped/DefinitelyTyped/react/react-dom.d.ts#ba424f7ee39717d51c17699a09ac8df312a7e9a1",
     "react-redux": "github:DefinitelyTyped/DefinitelyTyped/react-redux/react-redux.d.ts#ba424f7ee39717d51c17699a09ac8df312a7e9a1",
     "redux": "github:DefinitelyTyped/DefinitelyTyped/redux/redux.d.ts#ba424f7ee39717d51c17699a09ac8df312a7e9a1"
   },
   "dependencies": {
+    "inversify": "npm:inversify",
+    "popsicle": "npm:popsicle",
     "tsmvc": "npm:tsmvc"
   }
 }

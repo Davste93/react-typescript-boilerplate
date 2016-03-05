@@ -4,7 +4,9 @@
     "jsx": "preserve",
     "noEmitOnError": true,
     "experimentalDecorators": true,
-    "moduleResolution": "classic"
+    "moduleResolution": "classic",
+    "outDir": "build",
+    "sourceMap": true
   },
   "filesGlob": [
     "app/**/*.ts",
@@ -18,6 +20,23 @@
     "dev_server.js"
   ],
   "files": [
+    "app/tsmvc-consumer/app.ts",
+    "app/tsmvc-consumer/implementation/config/config.ts",
+    "app/tsmvc-consumer/implementation/data/AddressDataRepository.ts",
+    "app/tsmvc-consumer/implementation/data/AddressDataRepositoryImpl.ts",
+    "app/tsmvc-consumer/implementation/data/UserDataRepository.ts",
+    "app/tsmvc-consumer/implementation/data/UserDataRepositoryImpl.ts",
+    "app/tsmvc-consumer/implementation/model/AddressModel.ts",
+    "app/tsmvc-consumer/implementation/model/UserModel.ts",
+    "app/tsmvc-consumer/implementation/service/AddressService.ts",
+    "app/tsmvc-consumer/implementation/service/UserService.ts",
+    "app/tsmvc/classes/helper/ApiParser.ts",
+    "app/tsmvc/classes/helper/ApiRepository.ts",
+    "app/tsmvc/classes/helper/List.ts",
+    "app/tsmvc/interfaces/data/DataRepository.ts",
+    "app/tsmvc/interfaces/model/Model.ts",
+    "app/tsmvc/interfaces/model/Serializable.ts",
+    "app/tsmvc/interfaces/service/Service.ts",
     "app/index.tsx",
     "typings/main.d.ts"
   ],

@@ -1,18 +1,3 @@
-import {Model, indexKey} from 'tsmvc';
+import {Config, Services} from "./tsmvc-consumer/implementation/config/config";
 
-export class Building extends Model  {
-  @indexKey
-  public id: string;
-
-  public get size(): number
-  {
-    return 20;
-  }
-
-  public create(): Model {
-    return new Building();
-  }
-
-}
-
-console.log(new Building().size);
+console.log('test25');
