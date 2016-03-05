@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "inversify": "npm:inversify",
-    "popsicle": "npm:popsicle",
     "tsmvc": "npm:tsmvc"
   }
 }

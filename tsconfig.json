@@ -1,10 +1,10 @@
 {
   "compilerOptions": {
-    "target": "ES6",
+    "target": "es6",
     "jsx": "preserve",
     "noEmitOnError": true,
     "experimentalDecorators": true,
-    "moduleResolution": "classic",
+    "moduleResolution": "node",
     "outDir": "build",
     "sourceMap": true
   },
