@@ -30,6 +30,7 @@
     "app/tsmvc-consumer/implementation/model/UserModel.ts",
     "app/tsmvc-consumer/implementation/service/AddressService.ts",
     "app/tsmvc-consumer/implementation/service/UserService.ts",
+    "app/components/table.tsx",
     "app/index.tsx",
     "typings/main.d.ts"
   ],
