@@ -10,8 +10,10 @@ var port_db = 8086;
 var compiler = webpack(config);
 
 gulp.task('build', function() {
-  return gulp.src('src/entry.js')
-    .pipe(compiler)
+  var gw = require('webpack-stream');
+
+  return gulp.src('app/index.ts')
+    .pipe(gw(config))
     .pipe(gulp.dest('dist/'));
 });
 
@@ -22,7 +24,7 @@ gulp.task('mockdb', function() {
 });
 
 //dev task:
-gulp.task('serve', ['mockdb'], function(){
+gulp.task('dev', ['mockdb'], function(){
   //Webpackdev server builds so there's no need
     new WebpackDevServer(compiler, {
       /*drop it like it's*/hot:true,

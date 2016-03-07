@@ -11,6 +11,8 @@
   "filesGlob": [
     "app/**/*.ts",
     "app/**/*.tsx",
+    "components/**/*.ts",
+    "components/**/*.tsx",
     "typings/main.d.ts",
     "!node_modules/**"
   ],
@@ -20,6 +22,7 @@
     "dev_server.js"
   ],
   "files": [
+    "app/index.ts",
     "app/tsmvc-consumer/app.ts",
     "app/tsmvc-consumer/implementation/config/config.ts",
     "app/tsmvc-consumer/implementation/data/AddressDataRepository.ts",
@@ -30,8 +33,9 @@
     "app/tsmvc-consumer/implementation/model/UserModel.ts",
     "app/tsmvc-consumer/implementation/service/AddressService.ts",
     "app/tsmvc-consumer/implementation/service/UserService.ts",
-    "app/components/table.tsx",
-    "app/index.tsx",
+    "components/grid/column.ts",
+    "components/grid/grid.ts",
+    "components/usergrid/usergrid.ts",
     "typings/main.d.ts"
   ],
   "atom": {
